@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon Univers</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#06070c;--panel:#0d1018;--line:#1c2230;--tx:#e8ecf5;--mut:#7c869c;--a:#00e5ff;--b:#ff2bd6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(900px 500px at 80% -10%,#ff2bd61f,transparent),radial-gradient(800px 500px at 0% 0%,#00e5ff1a,transparent),var(--bg);color:var(--tx);font:15px/1.4 Inter,system-ui,sans-serif;min-height:100vh}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,#0000 0 2px,#00000030 2px 3px);opacity:.5}
+header{padding:56px 20px 24px;max-width:1000px;margin:auto}
+.tag{font:500 11px Orbitron,sans-serif;letter-spacing:.35em;color:var(--a)}
+h1{font:800 clamp(34px,9vw,68px)/1 Orbitron,sans-serif;margin:10px 0;letter-spacing:.04em;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px #00e5ff30}
+.sub{color:var(--mut);max-width:520px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:#06070ce6;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nv{max-width:1000px;margin:auto;padding:10px 20px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.nv button{flex:none;background:var(--panel);color:var(--mut);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font:500 12px Orbitron,sans-serif;letter-spacing:.08em;cursor:pointer}
+.nv button.on{color:#000;background:var(--a);border-color:var(--a);box-shadow:0 0 18px #00e5ff66}
+.nv button small{opacity:.7;margin-left:4px}
+main{max-width:1000px;margin:auto;padding:20px}
+input{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--tx);border-radius:12px;padding:13px 16px;font:inherit;margin-bottom:18px}
+input:focus{outline:none;border-color:var(--a);box-shadow:0 0 0 3px #00e5ff22}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.c{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,var(--panel),#0a0c14);border:1px solid var(--line);border-radius:12px;padding:14px;animation:u .4s both;transition:.2s}
+.c:hover{border-color:var(--b);transform:translateY(-2px);box-shadow:0 6px 24px #ff2bd622}
+.c i{font:normal 800 12px Orbitron,sans-serif;color:var(--a);opacity:.8;min-width:26px}
+.c b{font-weight:500}
+@keyframes u{from{opacity:0;transform:translateY(8px)}}
+.n{color:var(--mut);text-align:center;padding:40px 0}
+footer{text-align:center;color:var(--mut);font:500 10px Orbitron,sans-serif;letter-spacing:.3em;padding:30px}
+.g{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.c{flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden;cursor:pointer}
+.p{aspect-ratio:2/3;background:#10131c center/cover;display:flex;align-items:center;justify-content:center;color:#2a3144;font:800 26px Orbitron,sans-serif}
+.p.t{aspect-ratio:auto;padding:22px 10px;min-height:90px}
+.m{padding:10px 12px}.m b{display:block;font-size:13px}
+.st{color:#ffc933;font-size:12px;letter-spacing:2px;margin-top:4px}.st s{text-decoration:none;color:#2a3144}.st em{font:normal 11px Inter;color:var(--mut);margin-left:6px;letter-spacing:0}
+#md{position:fixed;inset:0;background:#000d;z-index:20;overflow:auto;display:none;padding:calc(16px + env(safe-area-inset-top,0px)) 14px 30px}
+.bx{max-width:720px;margin:auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 0 50px #00e5ff22}
+.bx h2{font:800 20px Orbitron,sans-serif;margin:0 0 4px}.hd{display:flex;gap:14px}.hd img{width:110px;border-radius:10px;align-self:flex-start}
+.x{float:right;background:none;border:1px solid var(--line);color:var(--tx);border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer}
+.bx h3{font:500 12px Orbitron,sans-serif;letter-spacing:.2em;color:var(--a);margin:18px 0 8px}
+.cs{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px}.a{flex:none;width:84px;text-align:center;font-size:11px;color:var(--mut);cursor:pointer}.a img,.a .p{width:84px;height:84px;aspect-ratio:1;border-radius:50%;object-fit:cover;margin-bottom:4px;font-size:16px}.a b{display:block;color:var(--tx);font-weight:500}
+.bio{white-space:pre-line;color:#cfd6e6;font-size:14px}.bx button.k,.bn{background:var(--a);color:#000;border:0;border-radius:10px;padding:11px 16px;font:500 13px Orbitron,sans-serif;cursor:pointer;margin-top:10px}
+.bn{display:block;width:100%;margin:0 0 16px}
+footer button{background:none;border:0;color:var(--mut);font:inherit;letter-spacing:inherit;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+<div class="tag">// ARCHIVES PERSONNELLES</div>
+<h1>MON UNIVERS</h1>
+<p class="sub">Tout ce que j’ai regardé, suivi et adoré : films, séries, animés, télé-réalité et créateurs.</p>
+</header>
+<nav><div class="nv" id="nv"></div></nav>
+<main><input id="q" type="search" placeholder="Rechercher un titre…"><div class="g" id="g"></div></main>
+<footer>— FIN DE TRANSMISSION —<br><button onclick="keyBox()">🔑 CLÉ TMDB</button><br><span style="letter-spacing:.1em;font-size:9px">Données et images : TMDB</span></footer><div id="md"></div>
+<script>
+const S=[
+["films","Films","Send Help|Family Plan|The Bluff|Fear Street|Scream|La Momie|Les 4 Fantastiques|Primate|Salem’s Lot|Pretty Lethal|Pride and Prejudice and Zombies|Balls Up|War Machine|Odd Thomas|Saga Insidious|Saga Conjuring|Saga Slasher|Saga Transformers|They Will Kill You|Evil Dead|Evil Dead Rise|Evil Dead Burn|Carrie|Prince of Persia|Hansel & Gretel : Witch Hunters|Happy Birthdead 1 & 2|Babysitter Killer 1 & 2|Deadly Illusion|Madame Web|Morbius|Mortal Kombat II|Sublime Créature|The Monkey|Long Distance|Edge of Tomorrow|Ready Player One|Free Guy|Adam à travers le temps|Red Notice|Jumanji|The Quiet Maid|Lucy|Life After Beth|Jennifer’s Body|Night Teeth|Charlie’s Angels|Atlas|Rebel Moon|La Demoiselle et le Dragon|Enola Holmes|Need for Speed|Tomorrowland|Fight or Flight|Voicemails for Isabelle|Cellar Door|The Proposal|Ça|Supergirl|Hérédité|Masters of the Universe|The Gorge|Sinister|Destination Finale|Greenland|Cold Storage|Predator : Badlands|Prey|Predator|The Running Man|Tron : Ares|Les 4 Fantastiques : Premiers Pas|M3GAN 1 & 2|Jurassic World : Renaissance|Subservience|Venom|Furiosa|The Marvels|Blue Beetle|Les Gardiens de la Galaxie|Ant-Man|65 : La Terre d’avant|Jurassic World : Le Monde d’après|Spiderhead|Everything Everywhere All at Once|Black Panther|Black Panther : Wakanda Forever|Infinite|The Tomorrow War|Base secrète|La Maison du mal|La Princesse|47 Ronin|Spider-Man : Homecoming|Spider-Man : Far From Home|Spider-Man : No Way Home|Spider-Man : Brand New Day|Obsession|Soulm8te|72 heures|The Last House|Ghost in the Shell|Abigail|La Fin d’Oak Street|One of Them|World War Z|Jusqu’en enfer|Men in Black : International|Le Réveil de la momie|Dracula|Top Gun : Maverick|Les Guetteurs|Onslaught|Companion|Ghost Rider|Insidious : L’Invasion du lointain|Dans le noir|Apocalypse Z|Violent Night|#Alive|Matchbox|Honor Society|Other Mommy|Independence Day : Resurgence|Artemis Fowl"],
+["series","Séries","The Copenhagen Test|Renegade Nell|Wednesday|House of the Dragon|Reacher|Preacher|The ’Burbs|Heartbreak High|Sex Education|Monarch : Legacy of Monsters|Legacies|Stranger Things|Citadel|Warrior Nun|Deadly Class|Obliterated|Lock & Key|Lovecraft Country|Ça : Welcome to Derry|Altered Carbon|Into the Badlands|The Wheel of Time|Twisted Metal|Eyes of Wakanda|What If…?|Sandman|Doctor Who|The Bondsman|La Brea|Agatha All Along|The Boys|Les Frères Sun|Supacell|Halo|Titans|The Winchesters|Supernatural|Superstition|Gen V|The Witcher|Willow|DC’s Legends of Tomorrow|The Bastard Son & the Devil Himself|She-Hulk : Avocate|Débris|Miss Marvel|Peacemaker|Moon Knight|Hawkeye|Loki|The Beauty|Alien : Romulus|Sirens|H2O : Les Sirènes de Mako|Love, Death & Robots|Lanterns|Job mortel"],
+["anime","Animés","Sword Art Online|Demon Slayer|Jujutsu Kaisen|Solo Leveling|Hell’s Paradise|Gintama"],
+["anim","Animation","Arcane|Moana|Secret Level|Twilight of the Gods|Blue Eye Samurai|Daniel Spellbound : Tout pour la magie|Cyberpunk : Edgerunners|Dota|Fast & Furious : Les Espions dans la course"],
+["tv","Télé-réalité","Canada Shore|Frenchie Shore|Italia Shore|Too Hot to Handle|Island Temptation|Perfect Match|Below Deck Méditerranée|Battle Camp"],
+["yt","YouTubeurs","Jojol|La Golinval|MrBeast|Ryan Trahan|Kirin Camp|Topik|FastGoodCuisine|Joël TV 2.0|Isys Cappuccino|Cam Make Up|Le Parfait Inconnu|Galax|TheRelaxingEnd|LeGrand JD"]
+].map(([k,l,s])=>({k,l,a:s.split("|")}));
+const API="https://api.themoviedb.org/3",IM="https://image.tmdb.org/t/p/",cache=JSON.parse(localStorage.getItem("tmdbc")||"{}");
+let K=localStorage.getItem("tmdbk")||"",cur=S[0].k;
+const nv=document.getElementById("nv"),g=document.getElementById("g"),q=document.getElementById("q"),md=document.getElementById("md");
+const E=x=>String(x??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const sv=()=>{try{localStorage.setItem("tmdbc",JSON.stringify(cache))}catch(e){}};
+async function T(p,o={}){const u=new URL(API+p),h={};if(K.length>40)h.Authorization="Bearer "+K;else u.searchParams.set("api_key",K);u.searchParams.set("language","fr-FR");for(const k in o)u.searchParams.set(k,o[k]);const r=await fetch(u,{headers:h});if(!r.ok)throw r.status;return r.json()}
+const cl=t=>t.replace(/^Saga /,"").replace(/ 1 & 2$/,"").replace(/ : /g," ");
+const stars=v=>{const n=Math.round(v/2);return `<div class="st">${"★".repeat(n)}<s>${"★".repeat(5-n)}</s><em>${v.toFixed(1)}</em></div>`};
+async function find(s,t){const id=s+"|"+t;if(cache[id]!==undefined)return cache[id];let x=null;try{
+const ty=s==="films"?"movie":s==="anim"?"multi":"tv";let d=(await T("/search/"+ty,{query:cl(t)})).results.filter(z=>z.media_type!=="person");
+if(!d.length&&s==="series")d=(await T("/search/movie",{query:cl(t)})).results.map(z=>({...z,media_type:"movie"}));
+const z=d.find(z=>z.poster_path)||d[0];if(z)x={id:z.id,ty:z.media_type||ty,n:z.title||z.name,p:z.poster_path,v:z.vote_average||0,o:z.overview||"",y:(z.release_date||z.first_air_date||"").slice(0,4),b:z.backdrop_path};
+cache[id]=x;sv()}catch(e){return null}return x}
+nv.innerHTML=S.map(s=>`<button data-k="${s.k}">${s.l.toUpperCase()}<small>${s.a.length}</small></button>`).join("");
+const obs=new IntersectionObserver(es=>es.forEach(async e=>{if(!e.isIntersecting)return;obs.unobserve(e.target);const c=e.target,s=c.dataset.s;if(!K||s==="yt")return;const x=await find(s,c.dataset.t);if(!x)return;
+if(x.p){const p=c.querySelector(".p");p.style.backgroundImage=`url(${IM}w342${x.p})`;p.textContent="";p.classList.remove("t")}
+if(x.v)c.querySelector(".m").insertAdjacentHTML("beforeend",stars(x.v))}),{rootMargin:"250px"});
+function r(){nv.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.k===cur));
+const t=q.value.trim().toLowerCase(),l=S.find(s=>s.k===cur).a.map((x,i)=>[x,i+1]).filter(([x])=>x.toLowerCase().includes(t));
+g.innerHTML=(K?"":'<button class="bn" id="kb">🔑 Ajouter ma clé TMDB pour afficher affiches, notes et synopsis</button>')+(l.length?l.map(([x,i])=>`<div class="c" data-s="${cur}" data-t="${E(x)}"><div class="p t">${String(i).padStart(2,"0")}</div><div class="m"><b>${E(x)}</b></div></div>`).join(""):'<p class="n">Aucun résultat</p>');
+g.querySelectorAll(".c").forEach(c=>obs.observe(c))}
+function keyBox(){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>Clé TMDB</h2><p class="bio">Colle ici ta clé API (v3) ou ton jeton d’accès. Elle reste uniquement dans ton navigateur.</p><input id="ki" value="${E(K)}" placeholder="Ta clé TMDB"><button class="k" id="ks">Enregistrer</button></div>`;md.style.display="block";document.getElementById("ks").onclick=()=>{K=document.getElementById("ki").value.trim();localStorage.setItem("tmdbk",K);md.style.display="none";r()}}
+async function det(s,t){const x=await find(s,t);if(!x){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>${E(t)}</h2><p class="bio">Aucune info trouvée sur TMDB.</p></div>`;md.style.display="block";return}
+md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><div class="hd">${x.p?`<img src="${IM}w342${x.p}">`:""}<div><h2>${E(x.n)}</h2><div class="st">${x.y}</div>${x.v?stars(x.v):""}</div></div><h3>SYNOPSIS</h3><p class="bio">${E(x.o||"Pas de synopsis en français.")}</p><h3>CASTING</h3><div class="cs" id="cs">…</div><h3 id="bt" style="display:none">BIOGRAPHIE</h3><p class="bio" id="bio"></p></div>`;md.style.display="block";
+try{const c=(await T(`/${x.ty}/${x.id}/credits`)).cast.slice(0,14);document.getElementById("cs").innerHTML=c.map(a=>`<div class="a" data-i="${a.id}">${a.profile_path?`<img src="${IM}w185${a.profile_path}">`:'<div class="p">?</div>'}<b>${E(a.name)}</b>${E(a.character||"")}</div>`).join("")||"—"}catch(e){document.getElementById("cs").textContent="—"}}
+async function bio(id){const b=document.getElementById("bio");document.getElementById("bt").style.display="block";b.textContent="…";try{let p=await T("/person/"+id);if(!p.biography)p=await T("/person/"+id,{language:"en-US"});document.getElementById("bt").textContent="BIOGRAPHIE · "+p.name.toUpperCase();b.textContent=p.biography||"Pas de biographie disponible.";b.scrollIntoView({behavior:"smooth",block:"center"})}catch(e){b.textContent="Erreur de chargement."}}
+nv.onclick=e=>{const b=e.target.closest("button");if(b){cur=b.dataset.k;r()}};
+g.onclick=e=>{if(e.target.id==="kb")return keyBox();const c=e.target.closest(".c");if(c)det(c.dataset.s,c.dataset.t)};
+md.onclick=e=>{const a=e.target.closest(".a");if(a)bio(a.dataset.i);else if(e.target===md)md.style.display="none"};
+q.oninput=r;r();
+</script>
+</body>
+</html>
