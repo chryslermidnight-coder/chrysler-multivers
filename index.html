@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mon Univers</title>
+<title>CHRYSLER Univers</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--bg:#06070c;--panel:#0d1018;--line:#1c2230;--tx:#e8ecf5;--mut:#7c869c;--a:#00e5ff;--b:#ff2bd6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -46,17 +46,44 @@ footer{text-align:center;color:var(--mut);font:500 10px Orbitron,sans-serif;lett
 .bio{white-space:pre-line;color:#cfd6e6;font-size:14px}.bx button.k,.bn{background:var(--a);color:#000;border:0;border-radius:10px;padding:11px 16px;font:500 13px Orbitron,sans-serif;cursor:pointer;margin-top:10px}
 .bn{display:block;width:100%;margin:0 0 16px}
 footer button{background:none;border:0;color:var(--mut);font:inherit;letter-spacing:inherit;cursor:pointer}
+#fab{position:fixed;right:18px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:6;width:58px;height:58px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--a),var(--b));color:#000;font:800 30px/1 Inter,sans-serif;box-shadow:0 0 28px #00e5ff77;cursor:pointer}
+select{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--tx);border-radius:12px;padding:12px;font:inherit;margin:10px 0}
+.rs{display:flex;gap:12px;align-items:center;padding:8px;border-bottom:1px solid var(--line);cursor:pointer}.rs img,.rs .p{width:46px;height:69px;border-radius:6px;flex:none;object-fit:cover;aspect-ratio:auto;padding:0;min-height:0}.rs span{color:var(--mut);font-size:12px}
+*{font-family:Inter,system-ui,sans-serif!important}
+:root{--bg:#09090e;--panel:#15151d;--line:#272733;--a:#ff6a2b;--b:#e50914}
+body{background:var(--bg)}body::after{display:none}
+nav{border:0;background:linear-gradient(#09090e,#09090ee6)}
+.tb{max-width:1100px;margin:auto;padding:14px 16px 4px;display:flex;gap:12px;align-items:center}
+.lg{font-weight:800;font-size:22px;color:#e50914;letter-spacing:-.5px;white-space:nowrap}.lg b{color:#fff}
+.tb input{margin:0;border-radius:999px;padding:11px 18px;flex:1;min-width:0}
+.nv{max-width:1100px}
+.nv button{display:flex;align-items:center;gap:8px;border-radius:999px;padding:7px 16px 7px 7px;font:600 14px Inter;color:#d6d6e0;letter-spacing:0;background:#1a1a24}
+.nv button span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2a2a37;font-size:15px}
+.nv button.on{color:#fff;border:2px solid var(--a);box-shadow:none;background:#1a1a24}
+#hero{display:none;min-height:min(78vh,560px);background:#000 center/cover;position:relative}
+#hero:empty{display:none!important}
+.hc{position:absolute;left:0;right:0;bottom:0;max-width:1100px;margin:auto;padding:20px 18px 26px}
+.hg{color:var(--b);font-weight:700;letter-spacing:.2em;font-size:11px}
+.ht{font:800 clamp(30px,8vw,56px)/1.05 Inter;margin:8px 0;text-shadow:0 2px 20px #000}
+.hm{display:flex;gap:10px;align-items:center;color:#c9c9d6;font-size:13px}.bd{background:#f5c518;color:#000;font-weight:800;border-radius:6px;padding:4px 9px}
+.hc p{color:#d6d6e0;max-width:560px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hb{display:flex;gap:10px;margin:14px 0}.hb button{border:0;border-radius:10px;padding:13px 20px;font:700 15px Inter;cursor:pointer}.hb .w{background:#fff;color:#000}.hb .gr{background:#ffffff26;color:#fff;backdrop-filter:blur(8px)}
+.dt{display:flex;gap:6px}.dt i{width:8px;height:8px;border-radius:99px;background:#ffffff55}.dt i.on{width:26px;background:#fff}
+main{max-width:1100px}
+.rt{display:flex;align-items:center;gap:10px;font:700 20px Inter;margin:26px 0 12px}.rt i{width:4px;height:22px;background:var(--a);border-radius:2px}
+.row{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}.row .c{flex:none;width:130px}
+.c{background:none;border:0;border-radius:10px}.c:hover{box-shadow:none;transform:scale(1.03)}
+.p{border-radius:10px}.m{padding:6px 2px}
+.c.t10{flex-direction:row;align-items:flex-end;width:170px}.t10 .num{font-size:110px;line-height:.8;font-weight:800;color:#09090e;-webkit-text-stroke:3px #8a8a99;margin-right:-22px;z-index:1}.t10 .p{width:112px;aspect-ratio:2/3;flex:none}
+.ow{font:400 12px/1.6 Inter;letter-spacing:.02em;color:#a5a8ba;max-width:420px;margin:0 auto 14px}.ig{display:inline-block;color:#fff;text-decoration:none;font:600 13px Inter;letter-spacing:.02em;border:1.5px solid var(--a);border-radius:999px;padding:9px 18px;background:#ff6a2b22}
+.p.yt{aspect-ratio:1;border-radius:50%}
 </style>
 </head>
 <body>
-<header>
-<div class="tag">// ARCHIVES PERSONNELLES</div>
-<h1>MON UNIVERS</h1>
-<p class="sub">Tout ce que j’ai regardé, suivi et adoré : films, séries, animés, télé-réalité et créateurs.</p>
-</header>
-<nav><div class="nv" id="nv"></div></nav>
-<main><input id="q" type="search" placeholder="Rechercher un titre…"><div class="g" id="g"></div></main>
-<footer>— FIN DE TRANSMISSION —<br><button onclick="keyBox()">🔑 CLÉ TMDB</button><br><span style="letter-spacing:.1em;font-size:9px">Données et images : TMDB</span></footer><div id="md"></div>
+
+<nav><div class="tb"><div class="lg">CHRYSLER<b>UNIVERS</b></div><input id="q" type="search" placeholder="Rechercher films, séries, animés…"></div><div class="nv" id="nv"></div></nav><section id="hero"></section>
+<main><div id="g"></div></main>
+<footer><p class="ow">© 2026 CHRYSLER Univers<br>Site créé par moi, CHRYSLER. Ce site est ma propriété : toute copie ou reproduction est interdite sans mon accord.</p><a class="ig" href="https://instagram.com/midnight_l.a2" target="_blank" rel="noopener">📸 Instagram : @midnight_l.a2</a><br><br>— FIN DE TRANSMISSION —<br><button onclick="keyBox()">🔑 CLÉ TMDB</button><br><span style="letter-spacing:.1em;font-size:9px">Données et images : TMDB</span></footer><div id="md"></div><button id="fab" onclick="addBox()" aria-label="Ajouter">+</button>
 <script>
 const S=[
 ["films","Films","Send Help|Family Plan|The Bluff|Fear Street|Scream|La Momie|Les 4 Fantastiques|Primate|Salem’s Lot|Pretty Lethal|Pride and Prejudice and Zombies|Balls Up|War Machine|Odd Thomas|Saga Insidious|Saga Conjuring|Saga Slasher|Saga Transformers|They Will Kill You|Evil Dead|Evil Dead Rise|Evil Dead Burn|Carrie|Prince of Persia|Hansel & Gretel : Witch Hunters|Happy Birthdead 1 & 2|Babysitter Killer 1 & 2|Deadly Illusion|Madame Web|Morbius|Mortal Kombat II|Sublime Créature|The Monkey|Long Distance|Edge of Tomorrow|Ready Player One|Free Guy|Adam à travers le temps|Red Notice|Jumanji|The Quiet Maid|Lucy|Life After Beth|Jennifer’s Body|Night Teeth|Charlie’s Angels|Atlas|Rebel Moon|La Demoiselle et le Dragon|Enola Holmes|Need for Speed|Tomorrowland|Fight or Flight|Voicemails for Isabelle|Cellar Door|The Proposal|Ça|Supergirl|Hérédité|Masters of the Universe|The Gorge|Sinister|Destination Finale|Greenland|Cold Storage|Predator : Badlands|Prey|Predator|The Running Man|Tron : Ares|Les 4 Fantastiques : Premiers Pas|M3GAN 1 & 2|Jurassic World : Renaissance|Subservience|Venom|Furiosa|The Marvels|Blue Beetle|Les Gardiens de la Galaxie|Ant-Man|65 : La Terre d’avant|Jurassic World : Le Monde d’après|Spiderhead|Everything Everywhere All at Once|Black Panther|Black Panther : Wakanda Forever|Infinite|The Tomorrow War|Base secrète|La Maison du mal|La Princesse|47 Ronin|Spider-Man : Homecoming|Spider-Man : Far From Home|Spider-Man : No Way Home|Spider-Man : Brand New Day|Obsession|Soulm8te|72 heures|The Last House|Ghost in the Shell|Abigail|La Fin d’Oak Street|One of Them|World War Z|Jusqu’en enfer|Men in Black : International|Le Réveil de la momie|Dracula|Top Gun : Maverick|Les Guetteurs|Onslaught|Companion|Ghost Rider|Insidious : L’Invasion du lointain|Dans le noir|Apocalypse Z|Violent Night|#Alive|Matchbox|Honor Society|Other Mommy|Independence Day : Resurgence|Artemis Fowl"],
@@ -67,35 +94,72 @@ const S=[
 ["yt","YouTubeurs","Jojol|La Golinval|MrBeast|Ryan Trahan|Kirin Camp|Topik|FastGoodCuisine|Joël TV 2.0|Isys Cappuccino|Cam Make Up|Le Parfait Inconnu|Galax|TheRelaxingEnd|LeGrand JD"]
 ].map(([k,l,s])=>({k,l,a:s.split("|")}));
 const API="https://api.themoviedb.org/3",IM="https://image.tmdb.org/t/p/",cache=JSON.parse(localStorage.getItem("tmdbc")||"{}");
-let K=localStorage.getItem("tmdbk")||"",cur=S[0].k;
+let K=localStorage.getItem("tmdbk")||"",YK=localStorage.getItem("ytk")||"",cur="all",CU=[];
+const X=JSON.parse(localStorage.getItem("tmdbx")||"{}"),svx=()=>{try{localStorage.setItem("tmdbx",JSON.stringify(X))}catch(e){}};
+S.forEach(s=>(X[s.k]||[]).forEach(t=>{if(!s.a.includes(t))s.a.push(t)}));
 const nv=document.getElementById("nv"),g=document.getElementById("g"),q=document.getElementById("q"),md=document.getElementById("md");
 const E=x=>String(x??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const sv=()=>{try{localStorage.setItem("tmdbc",JSON.stringify(cache))}catch(e){}};
 async function T(p,o={}){const u=new URL(API+p),h={};if(K.length>40)h.Authorization="Bearer "+K;else u.searchParams.set("api_key",K);u.searchParams.set("language","fr-FR");for(const k in o)u.searchParams.set(k,o[k]);const r=await fetch(u,{headers:h});if(!r.ok)throw r.status;return r.json()}
 const cl=t=>t.replace(/^Saga /,"").replace(/ 1 & 2$/,"").replace(/ : /g," ");
 const stars=v=>{const n=Math.round(v/2);return `<div class="st">${"★".repeat(n)}<s>${"★".repeat(5-n)}</s><em>${v.toFixed(1)}</em></div>`};
-async function find(s,t){const id=s+"|"+t;if(cache[id]!==undefined)return cache[id];let x=null;try{
+const fmt=n=>n>=1e6?(n/1e6).toFixed(1).replace(".0","")+" M":n>=1e3?Math.round(n/1e3)+" k":n;
+async function yfind(t){const id="yt|"+t;if(cache[id]!==undefined)return cache[id];if(!YK)return null;let x=null;try{
+const j=async(p,o)=>{const u=new URL("https://www.googleapis.com/youtube/v3/"+p);u.searchParams.set("key",YK);for(const k in o)u.searchParams.set(k,o[k]);const r=await fetch(u);if(!r.ok)throw r.status;return r.json()};
+const sr=await j("search",{part:"snippet",type:"channel",q:t,maxResults:1}),cid=sr.items&&sr.items[0]&&sr.items[0].id.channelId;
+if(cid){const c=(await j("channels",{part:"snippet,statistics",id:cid})).items[0],sn=c.snippet,th=sn.thumbnails;x={id:cid,ty:"yt",n:sn.title,pu:(th.high||th.medium||th.default).url,o:sn.description||"",v:0,y:"",sub:c.statistics.hiddenSubscriberCount?0:+c.statistics.subscriberCount,vc:+c.statistics.videoCount}}
+cache[id]=x;sv()}catch(e){return null}return x}
+async function find(s,t){if(s==="yt")return yfind(t);const id=s+"|"+t;if(cache[id]!==undefined)return cache[id];let x=null;try{
 const ty=s==="films"?"movie":s==="anim"?"multi":"tv";let d=(await T("/search/"+ty,{query:cl(t)})).results.filter(z=>z.media_type!=="person");
 if(!d.length&&s==="series")d=(await T("/search/movie",{query:cl(t)})).results.map(z=>({...z,media_type:"movie"}));
 const z=d.find(z=>z.poster_path)||d[0];if(z)x={id:z.id,ty:z.media_type||ty,n:z.title||z.name,p:z.poster_path,v:z.vote_average||0,o:z.overview||"",y:(z.release_date||z.first_air_date||"").slice(0,4),b:z.backdrop_path};
 cache[id]=x;sv()}catch(e){return null}return x}
-nv.innerHTML=S.map(s=>`<button data-k="${s.k}">${s.l.toUpperCase()}<small>${s.a.length}</small></button>`).join("");
-const obs=new IntersectionObserver(es=>es.forEach(async e=>{if(!e.isIntersecting)return;obs.unobserve(e.target);const c=e.target,s=c.dataset.s;if(!K||s==="yt")return;const x=await find(s,c.dataset.t);if(!x)return;
+const IC={all:"🔥",films:"🎬",series:"📺",anime:"⛩️",anim:"✨",tv:"💘",yt:"▶️"};
+const nvr=()=>{nv.innerHTML=[{k:"all",l:"Tout"},...S].map(s=>`<button data-k="${s.k}"><span>${IC[s.k]}</span>${s.l}</button>`).join("")};nvr();
+const obs=new IntersectionObserver(es=>es.forEach(async e=>{if(!e.isIntersecting)return;obs.unobserve(e.target);const c=e.target,s=c.dataset.s;if(s==="yt"?!YK:!K)return;const x=await find(s,c.dataset.t);if(!x)return;if(x.pu){const p=c.querySelector(".p");p.style.backgroundImage=`url(${x.pu})`;p.textContent="";p.classList.remove("t")}if(x.sub)c.querySelector(".m").insertAdjacentHTML("beforeend",`<div class="st"><em>${fmt(x.sub)} abonnés</em></div>`);
 if(x.p){const p=c.querySelector(".p");p.style.backgroundImage=`url(${IM}w342${x.p})`;p.textContent="";p.classList.remove("t")}
-if(x.v)c.querySelector(".m").insertAdjacentHTML("beforeend",stars(x.v))}),{rootMargin:"250px"});
+if(x.v)c.querySelector(".m").insertAdjacentHTML("beforeend",stars(x.v));clearTimeout(tt);tt=setTimeout(upT,700)}),{rootMargin:"250px"});
+let tt;
+const card=(s,x,i)=>`<div class="c" data-s="${s}" data-t="${E(x)}"><div class="p t${s==="yt"?" yt":""}">${String(i).padStart(2,"0")}</div><div class="m"><b>${E(x)}</b></div></div>`;
+function top10(){const l=Object.entries(cache).filter(([k,v])=>v&&v.p&&v.v&&!k.startsWith("yt|")).sort((a,b)=>b[1].v-a[1].v).slice(0,10);
+return l.length<3?"":`<h2 class="rt"><i></i>Mon Top 10</h2><div class="row">${l.map(([k,v],i)=>{const[s,...t]=k.split("|");return `<div class="c t10" data-s="${s}" data-t="${E(t.join("|"))}"><b class="num">${i+1}</b><div class="p" style="background-image:url(${IM}w342${v.p})"></div></div>`}).join("")}</div>`}
+function upT(){const e=document.getElementById("t10");if(e&&cur==="all"&&!q.value.trim())e.innerHTML=top10()}
 function r(){nv.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.k===cur));
-const t=q.value.trim().toLowerCase(),l=S.find(s=>s.k===cur).a.map((x,i)=>[x,i+1]).filter(([x])=>x.toLowerCase().includes(t));
-g.innerHTML=(K?"":'<button class="bn" id="kb">🔑 Ajouter ma clé TMDB pour afficher affiches, notes et synopsis</button>')+(l.length?l.map(([x,i])=>`<div class="c" data-s="${cur}" data-t="${E(x)}"><div class="p t">${String(i).padStart(2,"0")}</div><div class="m"><b>${E(x)}</b></div></div>`).join(""):'<p class="n">Aucun résultat</p>');
-g.querySelectorAll(".c").forEach(c=>obs.observe(c))}
-function keyBox(){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>Clé TMDB</h2><p class="bio">Colle ici ta clé API (v3) ou ton jeton d’accès. Elle reste uniquement dans ton navigateur.</p><input id="ki" value="${E(K)}" placeholder="Ta clé TMDB"><button class="k" id="ks">Enregistrer</button></div>`;md.style.display="block";document.getElementById("ks").onclick=()=>{K=document.getElementById("ki").value.trim();localStorage.setItem("tmdbk",K);md.style.display="none";r()}}
-async function det(s,t){const x=await find(s,t);if(!x){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>${E(t)}</h2><p class="bio">Aucune info trouvée sur TMDB.</p></div>`;md.style.display="block";return}
-md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><div class="hd">${x.p?`<img src="${IM}w342${x.p}">`:""}<div><h2>${E(x.n)}</h2><div class="st">${x.y}</div>${x.v?stars(x.v):""}</div></div><h3>SYNOPSIS</h3><p class="bio">${E(x.o||"Pas de synopsis en français.")}</p><h3>CASTING</h3><div class="cs" id="cs">…</div><h3 id="bt" style="display:none">BIOGRAPHIE</h3><p class="bio" id="bio"></p></div>`;md.style.display="block";
+const t=q.value.trim().toLowerCase(),f=s=>s.a.map((x,i)=>[x,i+1]).filter(([x])=>x.toLowerCase().includes(t));
+let h=K?"":'<button class="bn" id="kb">🔑 Ajouter ma clé TMDB pour afficher affiches, notes et synopsis</button>';
+if(cur==="all")h+='<div id="t10">'+(t?"":top10())+"</div>"+S.map(s=>{const l=f(s);return l.length?`<h2 class="rt"><i></i>${s.l}</h2><div class="row">${l.map(([x,i])=>card(s.k,x,i)).join("")}</div>`:""}).join("");
+else{const s=S.find(s=>s.k===cur);h+=`<h2 class="rt"><i></i>${s.l}</h2><div class="g">${f(s).map(([x,i])=>card(s.k,x,i)).join("")}</div>`}
+g.innerHTML=h;document.getElementById("hero").style.display=cur==="all"&&!t&&K?"block":"none";
+g.querySelectorAll(".c:not(.t10)").forEach(c=>obs.observe(c))}
+function keyBox(){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>Clés API</h2><p class="bio">Colle ici ta clé API (v3) ou ton jeton d’accès. Elle reste uniquement dans ton navigateur.</p><input id="ki" value="${E(K)}" placeholder="Clé TMDB (films, séries)"><input id="yi" style="margin-top:10px" value="${E(YK)}" placeholder="Clé YouTube (YouTubeurs)"><button class="k" id="ks">Enregistrer</button></div>`;md.style.display="block";document.getElementById("ks").onclick=()=>{K=document.getElementById("ki").value.trim();localStorage.setItem("tmdbk",K);YK=document.getElementById("yi").value.trim();localStorage.setItem("ytk",YK);md.style.display="none";r();hero()}}
+async function det(s,t){CU=[s,t];const x=await find(s,t);if(!x){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>${E(t)}</h2><p class="bio">${s==="yt"&&!YK?"Ajoute ta clé YouTube (bouton 🔑 en bas de page) pour voir la photo et la biographie.":"Aucune info trouvée."}</p></div>`;md.style.display="block";return}
+if(s==="yt"){md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><div class="hd">${x.pu?`<img src="${x.pu}" style="border-radius:50%;width:96px;height:96px;object-fit:cover">`:""}<div><h2>${E(x.n)}</h2><div class="st">${x.sub?fmt(x.sub)+" abonnés":""}${x.vc?" · "+x.vc+" vidéos":""}</div></div></div><h3>BIOGRAPHIE</h3><p class="bio">${E(x.o||"Pas de description.")}</p><a href="https://www.youtube.com/channel/${x.id}" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;background:var(--b);color:#fff;border-radius:10px;padding:11px 16px;font:600 13px Inter;text-decoration:none">▶ Voir la chaîne</a>${(X[s]||[]).includes(t)?'<button class="k" id="rm" style="margin-left:8px">Retirer de ma liste</button>':""}</div>`;md.style.display="block";return}
+md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><div class="hd">${x.p?`<img src="${IM}w342${x.p}">`:""}<div><h2>${E(x.n)}</h2><div class="st">${x.y}</div>${x.v?stars(x.v):""}</div></div><h3>SYNOPSIS</h3><p class="bio">${E(x.o||"Pas de synopsis en français.")}</p><h3>CASTING</h3><div class="cs" id="cs">…</div><h3 id="bt" style="display:none">BIOGRAPHIE</h3><p class="bio" id="bio"></p>${(X[s]||[]).includes(t)?'<button class="k" id="rm">Retirer de ma liste</button>':""}</div>`;md.style.display="block";
 try{const c=(await T(`/${x.ty}/${x.id}/credits`)).cast.filter(a=>a.profile_path).slice(0,14);document.getElementById("cs").innerHTML=c.map(a=>`<div class="a" data-i="${a.id}">${a.profile_path?`<img src="${IM}w185${a.profile_path}">`:'<div class="p">?</div>'}<b>${E(a.name)}</b>${E(a.character||"")}</div>`).join("")||"—"}catch(e){document.getElementById("cs").textContent="—"}}
 async function bio(id){const b=document.getElementById("bio");document.getElementById("bt").style.display="block";b.textContent="…";try{let p=await T("/person/"+id);if(!p.biography)p=await T("/person/"+id,{language:"en-US"});document.getElementById("bt").textContent="BIOGRAPHIE · "+p.name.toUpperCase();b.textContent=p.biography||"Pas de biographie disponible.";b.scrollIntoView({behavior:"smooth",block:"center"})}catch(e){b.textContent="Erreur de chargement."}}
 nv.onclick=e=>{const b=e.target.closest("button");if(b){cur=b.dataset.k;r()}};
 g.onclick=e=>{if(e.target.id==="kb")return keyBox();const c=e.target.closest(".c");if(c)det(c.dataset.s,c.dataset.t)};
-md.onclick=e=>{const a=e.target.closest(".a");if(a)bio(a.dataset.i);else if(e.target===md)md.style.display="none"};
-q.oninput=r;r();
+md.onclick=e=>{if(e.target.id==="rm"){const[s,t]=CU,z=S.find(z=>z.k===s);z.a=z.a.filter(x=>x!==t);X[s]=X[s].filter(x=>x!==t);svx();md.style.display="none";nvr();r();return}const a=e.target.closest(".a");if(a)bio(a.dataset.i);else if(e.target===md)md.style.display="none"};
+let st;
+function addBox(){const ops=S.map(s=>`<option value="${s.k}"${s.k===cur?" selected":""}>${s.l}</option>`).join("");
+md.innerHTML=`<div class="bx"><button class="x" onclick="md.style.display='none'">✕</button><h2>Ajouter</h2><select id="ac">${ops}</select><input id="ai" placeholder="Tape un titre…" autocomplete="off"><div id="ar"></div></div>`;md.style.display="block";
+const ai=document.getElementById("ai"),ar=document.getElementById("ar"),ac=document.getElementById("ac");
+const go=()=>{clearTimeout(st);st=setTimeout(async()=>{const v=ai.value.trim(),k=ac.value;if(!v){ar.innerHTML="";return}
+if(k==="yt"||!K){ar.innerHTML=`<button class="k" id="ad">Ajouter « ${E(v)} »</button>`;document.getElementById("ad").onclick=()=>put(k,v,null);return}
+try{const ty=k==="films"?"movie":(k==="series"||k==="tv")?"tv":"multi",d=(await T("/search/"+ty,{query:v})).results.filter(z=>z.media_type!=="person").slice(0,8);
+ar.innerHTML=d.map((z,i)=>`<div class="rs" data-i="${i}">${z.poster_path?`<img src="${IM}w92${z.poster_path}">`:'<div class="p"></div>'}<div><b>${E(z.title||z.name)}</b><br><span>${(z.release_date||z.first_air_date||"").slice(0,4)} · ${E(z.media_type||ty)}</span></div></div>`).join("")||'<p class="n">Rien trouvé</p>';
+ar.onclick=e=>{const c=e.target.closest(".rs");if(!c)return;const z=d[c.dataset.i],n=z.title||z.name;put(k,n,{id:z.id,ty:z.media_type||ty,n,p:z.poster_path,v:z.vote_average||0,o:z.overview||"",y:(z.release_date||z.first_air_date||"").slice(0,4),b:z.backdrop_path})}}catch(e){ar.textContent="Erreur de recherche."}},350)};
+ai.oninput=go;ac.onchange=go;ai.focus()}
+function put(k,t,x){const s=S.find(s=>s.k===k);if(!s.a.includes(t)){s.a.push(t);(X[k]=X[k]||[]).push(t);svx()}if(x){cache[k+"|"+t]=x;sv()}cur=k;md.style.display="none";nvr();r();window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"})}
+let hi=0,hs=[],ht;
+async function hero(){if(!K)return;const p=[];S.filter(s=>s.k==="films"||s.k==="series").forEach(s=>{for(let i=0;i<4;i++)p.push([s.k,s.a[Math.floor(Math.random()*s.a.length)]])});
+const l=(await Promise.all(p.map(async([s,t])=>{const x=await find(s,t);return x&&x.b&&x.o?{s,t,x}:null}))).filter(Boolean).slice(0,6);if(!l.length)return;hs=l;hi=0;hd()}
+function hd(){const e=document.getElementById("hero"),{s,t,x}=hs[hi];
+e.style.backgroundImage=`linear-gradient(0deg,#09090e 4%,#09090e00 55%),linear-gradient(90deg,#09090ecc,#0000 70%),url(${IM}w1280${x.b})`;
+e.innerHTML=`<div class="hc"><div class="hg">🔥 À L’AFFICHE DANS CHRYSLER UNIVERS</div><div class="ht">${E(x.n)}</div><div class="hm"><span class="bd">★ ${x.v.toFixed(1)}</span>${x.y} · ${x.ty==="movie"?"FILM":"SÉRIE"}</div><p>${E(x.o)}</p><div class="hb"><button class="w" data-s="${s}" data-t="${E(t)}">ⓘ Plus d’infos</button><button class="gr" id="ha">+ Ajouter</button></div><div class="dt">${hs.map((_,i)=>`<i class="${i===hi?"on":""}"></i>`).join("")}</div></div>`;
+clearTimeout(ht);ht=setTimeout(()=>{hi=(hi+1)%hs.length;hd()},7000)}
+document.getElementById("hero").onclick=e=>{const b=e.target.closest("button");if(!b)return;b.id==="ha"?addBox():det(b.dataset.s,b.dataset.t)};
+q.oninput=r;r();hero();
 </script>
 </body>
 </html>
